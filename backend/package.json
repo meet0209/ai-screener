@@ -11,8 +11,7 @@
     "workers": "tsx watch src/workerRunner.ts",
     "lint": "eslint \"src/**/*.ts\"",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "prepare": "husky install"
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
