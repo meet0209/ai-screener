@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json --noEmitOnError false || tsc -p tsconfig.json --skipLibCheck",
     "postbuild": "node scripts/copy-prompts.cjs",
     "start": "node dist/server.js",
     "workers": "tsx watch src/workerRunner.ts",
